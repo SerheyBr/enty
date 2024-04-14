@@ -18,7 +18,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -39,17 +38,18 @@ input, button, textarea, select {
 body {
   background-color: #000000;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .container-header {
-  max-width: 1390px;
-  padding: 0 15px;
+  max-width: 1300px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .container {
-  max-width: 1292px;
-  padding: 0 15px;
+  max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -58,6 +58,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+  margin-bottom: 100px;
 }
 .header__logo {
   cursor: pointer;
@@ -138,6 +139,8 @@ body {
   width: 200px;
   height: 100%;
   transition: all 0.3s ease;
+  background-color: #000;
+  width: 100%;
 }
 .mobile-menu__list {
   font-weight: 600;
@@ -162,4 +165,98 @@ body {
 
 .burger-menu.open + .mobile-menu {
   left: 0; /* open the menu by sliding it to the right */
+}
+
+.main {
+  margin-bottom: 134px;
+}
+.main__wrapper {
+  display: flex;
+}
+.main__content {
+  max-width: 603px;
+}
+.main__title {
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 36px;
+}
+.main__subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 48px;
+}
+.main__btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 23px;
+  padding: 20px 50px 24px 50px;
+  width: 289px;
+  height: 100px;
+  background: #ff559c;
+  transition: all 0.3s;
+}
+.main__btn:hover {
+  background: #f976ad;
+}
+.main__btn:active {
+  background: #8b395c;
+}
+.main__img {
+  width: 100%;
+}
+.main__img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .main__title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+  .main__btn {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .main__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__title {
+    text-align: center;
+  }
+  .main__subtitle {
+    text-align: center;
+  }
+  .main__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .main__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__title {
+    font-size: 48px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .main__btn {
+    padding: 30px 40px;
+    font-size: 24px;
+  }
 }
