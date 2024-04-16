@@ -43,3 +43,5 @@ radioBtns.forEach((el) => {
     }
   });
 });
+
+//проверка
