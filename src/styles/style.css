@@ -20,6 +20,7 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 a {
@@ -261,6 +262,9 @@ body {
   }
 }
 
+.features {
+  margin-bottom: 180px;
+}
 .features__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -558,4 +562,232 @@ body {
   .features-radios {
     display: none;
   }
+}
+
+.packages {
+  background: #e8e8e8;
+  border-radius: 100px;
+  padding: 100px 84px;
+}
+.packages__title {
+  font-size: 80px;
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.packages__btns {
+  margin-bottom: 64px;
+}
+.packages__cards {
+  margin-bottom: 48px;
+}
+.packages__extra {
+  display: flex;
+  max-height: 240px;
+  margin-bottom: 48px;
+  border: 4px solid rgba(0, 0, 0, 0.16);
+  border-radius: 40px;
+  padding: 40px;
+}
+.packages__extra-title {
+  max-width: 300px;
+  font-size: 40px;
+  line-height: 120%;
+}
+.packages__extra-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.packages__extra-item {
+  font-size: 20px;
+  line-height: 140%;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+.packages__extra-item::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ff559c;
+  border-radius: 50%;
+}
+.packages__help {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 88px;
+}
+.packages__help-title {
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.packages__help-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  border-radius: 20px;
+  background: #000;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 330px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.packages__help-btn:hover {
+  background-color: #201f1f;
+}
+
+.packages-btns__header {
+  display: flex;
+  margin-bottom: 24px;
+}
+.packages-btns__header-item {
+  cursor: pointer;
+  width: 25%;
+  padding: 24px 0;
+  text-align: center;
+  border-radius: 80px;
+  border: none;
+  transition: all 0.5s;
+  margin: 0 4px;
+  background-color: white;
+}
+.packages-btns__header-item:hover {
+  background: #ff559c;
+  color: white;
+}
+.packages-btns__footer {
+  display: flex;
+  height: 80px;
+  background-color: white;
+  border-radius: 80px;
+}
+.packages-btns__footer-item {
+  height: 100%;
+  width: 50%;
+  border-radius: 80px;
+  border: none;
+  background-color: white;
+  transition: all 0.5s;
+}
+.packages-btns__footer-item:hover {
+  background: #ff559c;
+  color: white;
+}
+
+.packages-card {
+  background: #fff;
+  border-radius: 32px;
+  padding: 40px;
+  border: 8px solid #e8e8e8;
+  transition: all 0.3s;
+}
+.packages-card:hover {
+  border: 8px solid #ff559c;
+}
+.packages-card__title {
+  font-size: 40px;
+  line-height: 120%;
+}
+.packages-card__price {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+.packages-card__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.64);
+  margin-bottom: 48px;
+}
+.packages-card__tabs {
+  margin-bottom: 55px;
+}
+.packages-card__tabs li {
+  position: relative;
+  padding: 6px 0;
+}
+.packages-card__tabs li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.packages-card__tabs-documents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.packages-card__tabs-documents-btn-wrapper {
+  display: flex;
+}
+.packages-card__tabs-documents-btn-wrapper div {
+  border-radius: 8px;
+  padding: 4px;
+  width: 28px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.packages-card__tabs-documents-btn-black {
+  background: #000;
+  color: white;
+  margin-right: 6px;
+}
+.packages-card__tabs-documents-btn-white {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  color: rgba(0, 0, 0, 0.3647058824);
+}
+.packages-card__btn {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #000;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.packages-card__btn:hover {
+  background-color: #201f1f;
+}
+
+.packages-card-tab__header {
+  display: flex;
+  justify-content: space-between;
+}
+.packages-card-tab__title {
+  font-size: 16px;
+  line-height: 150%;
+}
+.packages-card-tab__btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
