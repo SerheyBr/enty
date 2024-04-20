@@ -3,7 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
+	
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+ />
+ <link rel="stylesheet" href="styles/style.css">
 	<title>Enty</title>
 </head>
 <body>
@@ -11,7 +16,7 @@
 			<div class="container-header">
 				<div class="header">
 					<div class="header__logo">
-						<img src="images/header/logo.png" alt="enty">
+						<img src="images/header/logo.svg" alt="enty">
 					</div>
 					<nav class="header__menu header-menu">
 						<ul class="header-menu__list">
@@ -553,6 +558,108 @@ Let’s try Enty! Also, explore our article about the costs of running a company
 
 		</div>
 	</section>
-	<script src="/src/js/script.js"></script>
+	<section class="read-more">
+		<div class="container">
+			<h2 class="read-more__title">
+				Read more about accounting and related products
+			</h2>
+			<div class="read-more__grid">
+				<div class="read-more__item">
+					<img src="/src/images/read-more/image1.jpg" alt="image1">
+				</div>
+				<div class="read-more__item">
+					<img src="/src/images/read-more/image2.jpg" alt="image1">
+				</div>
+				<div class="read-more__item">
+					<img src="/src/images/read-more/image3.jpg" alt="image1">
+				</div>
+				<div class="read-more__item">
+					<img src="/src/images/read-more/image4.jpg" alt="image1">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="subscribe">
+		<div class="container">
+			<div class="subscribe__wrapper">
+				<h3 class="subscribe__title">Don’t miss our product updates by subscribing to our newsletter</h3>
+				<div class="subscribe__input">
+					<input type="text" placeholder="your email">
+					<button class="subscribe__btn">subscribe</button>
+				</div>
+				<button class="subscribe__btn-mobil">subscribe</button>
+			</div>
+		</div>
+	</section>
+	<section class="simplify-today">
+		<div class="container">
+			<div class="simplify-today__wrapper">
+				<h2 class="simplify-today__title">Simplify your accounting today</h2>
+				<button class="simplify-today__btn">
+					Let’s start
+				</button>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__icon">
+			<img src="/src/images/header/logo.svg" alt="logo">
+		</div>
+		
+		<ul>
+			<li>
+				<h4>Services</h4>
+			</li>
+			<li>Incorporation EU</li>
+			<li>Incorporation Estonia</li>
+		</ul>
+		<ul>
+			<li>
+				<h4>Legal Info</h4>
+			</li>
+			<li>Cookies Notice</li>
+			<li>Privacy Policy</li>
+			<li>Terms</li>
+		</ul>
+		<ul>
+			<li>
+				<h4>Contact Us</h4>
+			</li>
+			<li>Facebook</li>
+			<li>support@enty.io</li>
+			<li>+7 926 158-11-53</li>
+		</ul>
+		<ul class="footer__">
+			<li>14772172 Tornimäe tn 5,  10145, Tallinn, Harju maakond
+				Register №16080939</li>
+			<li>Developed with ❤
+				by Entytech OÜ and Digirepresent Services OÜ (license № FIU000382)</li>
+			<li>We accept</li>
+		</ul>
+	</footer>
+	<div class="swiper" style="color: azure;">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+		  <!-- Slides -->
+		  <div class="swiper-slide">Slide 1</div>
+		  <div class="swiper-slide">Slide 2</div>
+		  <div class="swiper-slide">Slide 3</div>
+		  ...
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+	 
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	 
+		<!-- If we need scrollbar -->
+		<div class="swiper-scrollbar"></div>
+	 </div>
+
+	 
+	 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	 <script src="/src/js/script.js"></script>
+	
 </body>
 </html>
