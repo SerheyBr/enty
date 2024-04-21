@@ -906,6 +906,7 @@ body{
 		width: 100%;
 		padding: 25px 0;
 		background-color: #000;
+		border: 1px solid #000;
 		border-radius: 20px;
 		color: white;
 		font-weight: 600;
@@ -913,9 +914,10 @@ body{
 		line-height: 133%;
 		text-align: center;
 		cursor: pointer;
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&:hover{
-			background-color: #201f1f;
+			background-color: rgb(173 81 129 / 82%);
+			border: 1px solid rgb(173 81 129 / 82%);
 		}
 	}
 
@@ -933,7 +935,7 @@ body{
 	}
 }
 .packages-card-tab {
-
+	cursor: pointer;
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -955,7 +957,11 @@ body{
 		font-size: 12px;
 		line-height: 133%;
 		color: rgba(0, 0, 0, 0.64);
+		display: none;
 	}
+}
+.packages-card-tab._active .packages-card-tab__body{
+	display: block;
 }
 
 .packagesSwiper .swiper-button-next, .swiper-button-prev{
@@ -1318,6 +1324,11 @@ margin-bottom: 180px;
 		line-height: 125%;
 		text-align: center;
 		max-width: 300px;
+		transition: all 0.3s;
+		cursor: pointer;
+		&:hover{
+			background-color: #b7aeae;
+		}
 	}
 	@media(max-width:700px){
 		display: none;
@@ -1481,6 +1492,14 @@ margin-bottom: 180px;
 		}
 	}
 }
+.questions-acordeon__item._active .questions-acordeon__btn span{
+	&::before{
+		transform: rotate(0);
+	}
+}
+.questions-acordeon__item._active .questions-acordeon__body{
+	display: block;
+}
 
 // read-more
 .read-more {
@@ -1500,6 +1519,7 @@ margin-bottom: 180px;
 	}
 
 	&__item {
+		height: auto;
 		img{
 			width: 100%;
 			height: 100%;
@@ -1512,7 +1532,8 @@ margin-bottom: 180px;
 		}
 		&__grid{
 			display: flex;
-			overflow: auto;
+			overflow-x: auto;
+			overflow-y: hidden;
 		}
 		&__item{
 			min-width: 292px;
