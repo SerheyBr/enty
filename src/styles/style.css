@@ -1520,3 +1520,15 @@ body {
   color: #ddd;
   padding-bottom: 8px;
 }
+
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0);
+}

@@ -757,6 +757,7 @@ body{
 		
 	}
 }
+
 .packages-btns {
 	&__header {
 		display: flex;
@@ -1691,3 +1692,16 @@ margin-bottom: 180px;
 	}
 }
 
+.element-animation {
+	// margin: 2rem 0;
+	// font-size: 3rem;
+	
+	/* Скроем элемент в начальном состоянии */
+	opacity: 0;
+	transform: translateY(100px);
+ }
+ .element-animation.element-show {
+	opacity: 1;
+	transition: all 1s;
+	transform: translateY(0);
+ }
