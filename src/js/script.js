@@ -22,6 +22,7 @@ const linksMobilMenu = mobilMenu.querySelectorAll(".mobile-menu__item");
 linksMobilMenu.forEach((el) => {
   el.addEventListener("click", (e) => {
     burger.classList.remove("open");
+    document.body.style.overflow = "visible";
   });
 });
 
