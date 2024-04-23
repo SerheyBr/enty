@@ -1,7 +1,9 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 // add action on the burger
-document.querySelector(".burger-menu").addEventListener("click", function (e) {
+const burger = document.querySelector(".burger-menu");
+
+burger.addEventListener("click", function (e) {
   const body = document.body;
 
   e.currentTarget.classList.toggle("open");
@@ -11,6 +13,16 @@ document.querySelector(".burger-menu").addEventListener("click", function (e) {
   } else {
     body.style.overflow = "visible";
   }
+});
+
+// add action bts menu berger
+const mobilMenu = document.querySelector(".mobile-menu");
+const linksMobilMenu = mobilMenu.querySelectorAll(".mobile-menu__item");
+
+linksMobilMenu.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    burger.classList.remove("open");
+  });
 });
 
 //adding actions to radio buttons in the "features" section
@@ -53,13 +65,16 @@ tabsInPackages.forEach((el) => {
   el.addEventListener("click", (e) => {
     if (e.currentTarget.classList.contains("_active")) {
       el.classList.remove("_active");
+      e.currentTarget.querySelector(".packages-card-tab__btn").innerHTML = "+";
       return;
     }
 
     for (let key of tabsInPackages) {
+      key.querySelector(".packages-card-tab__btn").innerHTML = "+";
       key.classList.remove("_active");
     }
 
+    e.currentTarget.querySelector(".packages-card-tab__btn").innerHTML = "-";
     el.classList.toggle("_active");
   });
 });
