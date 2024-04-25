@@ -1,4 +1,4 @@
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 // add action on the burger
 const burger = document.querySelector(".burger-menu");
@@ -98,28 +98,6 @@ questionsItems.forEach((el) => {
   });
 });
 
-// initial sliders
-const swiperPackages = new Swiper(".packagesSwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const swiperToolsSubscription = new Swiper(".toolsSubscriptionSwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const swiperTrust = new Swiper(".trustSwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 // add scrolling animation
 function onEntry(entry) {
   entry.forEach((change) => {
@@ -134,3 +112,25 @@ let elements = document.querySelectorAll(".element-animation");
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+// initial sliders
+// const swiperPackages = new Swiper(".packagesSwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+// const swiperToolsSubscription = new Swiper(".toolsSubscriptionSwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+// const swiperTrust = new Swiper(".trustSwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
