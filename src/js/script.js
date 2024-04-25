@@ -1,4 +1,4 @@
-// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 // add action on the burger
 const burger = document.querySelector(".burger-menu");
@@ -114,23 +114,23 @@ for (let elm of elements) {
 }
 
 // initial sliders
-// const swiperPackages = new Swiper(".packagesSwiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+const swiperPackages = new Swiper(".packagesSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-// const swiperToolsSubscription = new Swiper(".toolsSubscriptionSwiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+const swiperToolsSubscription = new Swiper(".toolsSubscriptionSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-// const swiperTrust = new Swiper(".trustSwiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+const swiperTrust = new Swiper(".trustSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
