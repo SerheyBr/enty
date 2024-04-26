@@ -20,10 +20,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  user-select: none;
 }
 html{
 	scroll-behavior: smooth
-	
 }
 *[id]:before {
 	display: block;
@@ -106,9 +106,15 @@ body{
 		padding: 6px 16px;
 		transition: all 0.3s;
 		
-		&:hover{
-			background: #ffff;
-			color: #000;
+		// &:hover{
+		// 	background: #ffff;
+		// 	color: #000;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background: #ffff;
+				color: #000;
+			}
 		}
 		&:active{
 			background: #8b8787;
@@ -240,8 +246,13 @@ body{
 		height: 100px;
 		background: #ff559c;
 		transition: all 0.3s;
-		&:hover{
-			background: #f976ad;
+		// &:hover{
+		// 	background: #f976ad;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background: #f976ad;
+			}
 		}
 		&:active{
 			background: #8b395c;
@@ -605,7 +616,12 @@ body{
 		line-height: 133%;
 		color: #1b1a1a;
 	}
-	&:hover{
+	// &:hover{
+	// 	.features-professional-accountant__img-message{
+	// 		opacity: 1;
+	// 	}
+	// }
+	@media(hover: hover){
 		.features-professional-accountant__img-message{
 			opacity: 1;
 		}
@@ -755,8 +771,13 @@ body{
 		input[type=radio]:checked + label::after {
 			opacity: 1;
 		}
-		input[type=radio]:hover + label::before {
-			background-color: #0000001a;
+		// input[type=radio]:hover + label::before {
+		// 	background-color: #0000001a;
+		// }
+		@media(hover: hover){
+			input[type=radio]:hover + label::before {
+				background-color: #0000001a;
+			}
 		}
 		}
 	}
@@ -806,8 +827,7 @@ body{
 
 	&__extra-list {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		flex-direction: column;
 		
 	}
 
@@ -864,9 +884,15 @@ body{
 		transition: all 0.3s;
 		cursor: pointer;
 
-		&:hover{
-			background-color: #201f1f;
+		// &:hover{
+		// 	background-color: #201f1f;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background-color: #201f1f;
+			}
 		}
+
 	}
 
 	@media(max-width:1200px){
@@ -926,9 +952,15 @@ body{
 		transition: all 0.5s;
 		margin: 0 4px;
 		background-color: white;
-		&:hover{
-			background: #ff559c;
-			color: white;
+		// &:hover{
+		// 	background: #ff559c;
+		// 	color: white;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background: #ff559c;
+				color: white;
+			}
 		}
 	}
 
@@ -946,9 +978,15 @@ body{
 		border: none;
 		background-color: white;
 		transition: all 0.5s;
-		&:hover{
-			background: #ff559c;
-			color: white;
+		// &:hover{
+		// 	background: #ff559c;
+		// 	color: white;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background: #ff559c;
+				color: white;
+			}
 		}
 	}
 	&__accordeon-btn{
@@ -984,8 +1022,13 @@ body{
 	transition: all 0.3s;
 	width: 33.33%;
 	margin: 0 10px;
-	&:hover{
-		border: 8px solid #ff559c;
+	// &:hover{
+	// 	border: 8px solid #ff559c;
+	// }
+	@media(hover: hover){
+		&:hover{
+			border: 8px solid #ff559c;
+		}
 	}
 	&__title {
 		font-size: 40px;
@@ -1068,9 +1111,15 @@ body{
 		text-align: center;
 		cursor: pointer;
 		transition: all 0.5s;
-		&:hover{
-			background-color: rgb(173 81 129 / 82%);
-			border: 1px solid rgb(173 81 129 / 82%);
+		// &:hover{
+		// 	background-color: rgb(173 81 129 / 82%);
+		// 	border: 1px solid rgb(173 81 129 / 82%);
+		// }
+		@media(hover: hover){
+			&:hover{
+				background-color: rgb(173 81 129 / 82%);
+				border: 1px solid rgb(173 81 129 / 82%);
+			}
 		}
 	}
 
@@ -1083,7 +1132,7 @@ body{
 		}
 	}
 	@media(max-width:900px){
-		width: 100%;
+		width: 93%;
 
 	}
 }
@@ -1249,6 +1298,7 @@ margin-bottom: 180px;
 		
 	}
 	@media(max-width:900px){
+		margin-bottom: 40px;
 		&__columns{
 			display: none;
 		}
@@ -1481,6 +1531,7 @@ margin-bottom: 180px;
 		margin-right: -10px;
 		li{
 			width: 25%;
+			height: 200px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -1490,6 +1541,8 @@ margin-bottom: 180px;
 	}
 
 	&__icon {
+		width: 100%;
+		height: 80%;
 		img{
 			width: 100%;
 			height: 100%;
@@ -1510,6 +1563,7 @@ margin-bottom: 180px;
 	&__more-clients {
 	}
 	@media(max-width:700px){
+		margin-bottom: 40px;
 		&__icons {
 			flex-wrap: wrap;
 			
@@ -1554,6 +1608,7 @@ margin-bottom: 180px;
 		line-height: 133%;
 		color: #fff;
 	}
+	
 }
 .trust-arrows{
 	justify-content: end;
@@ -1591,8 +1646,13 @@ margin-bottom: 180px;
 		max-width: 300px;
 		transition: all 0.3s;
 		cursor: pointer;
-		&:hover{
-			background-color: #b7aeae;
+		// &:hover{
+		// 	background-color: #b7aeae;
+		// }
+		@media(hover: hover){
+			&:hover{
+				background-color: #b7aeae;
+			}
 		}
 	}
 	@media(max-width:700px){
@@ -1876,8 +1936,13 @@ margin-bottom: 180px;
 		padding: 0 53px;
 		background-color: white;
 		transition: all 0.4s;
-		&:hover{
-			background-color: rgb(107, 106, 106);
+		// &:hover{
+		// 	background-color: rgb(107, 106, 106);
+		// }
+		@media(hover: hover){
+			&:hover{
+				background-color: rgb(107, 106, 106);
+			}
 		}
 	}
 	&__btn-mobil {
@@ -1933,8 +1998,13 @@ margin-bottom: 180px;
 			border: none;
 			transition: all 0.3s;
 			cursor: pointer;
-			&:hover{
-				background: #ff569489;
+			// &:hover{
+			// 	background: #ff569489;
+			// }
+			@media(hover: hover){
+				&:hover{
+					background: #ff569489;
+				}
 			}
 		}
 		@media(max-width:550px){
